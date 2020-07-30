@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contaienr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+button {
+  border: none !important;
+}
+
+button:focus {
+  border: none !important;
+}
+button:active {
+  border: none !important;
+}
+
+button:visited {
+  border: none !important;
+}
+.button {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+  border: 1px solid #333;
+  background-color: aqua;
+  color: rgb(68, 68, 68);
+}
+
+.button:hover {
+  background-color: brown;
+  border: 1px solid #333;
+  border: none;
+  color: #fff;
+}
+
+.button:active {
+  border: 1px solid #333;
+}
+
+.button:focus {
+  border: 1px solid #333;
+}

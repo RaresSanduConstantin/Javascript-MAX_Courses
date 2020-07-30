@@ -64,7 +64,29 @@ function divide() {
   writeToLog("divide", initlaResult, enterNumber, currentResult);
 }
 
-addBtn.addEventListener("click", addTwoNumbers);
-subtractBtn.addEventListener("click", substract);
-multiplyBtn.addEventListener("click", multiply);
-divideBtn.addEventListener("click", divide);
+function calculate(operation) {
+  const enterNumber = getUserInput();
+  const initlaResult = currentResult;
+  let operator;
+  if (operation === "ADD") {
+    currentResult += enterNumber;
+    operator = "+";
+  } else if (operation === "SUBSTRACT") {
+    currentResult = currentResult - enterNumber;
+    operator = "-";
+  } else if (operation === "MULTIPLY") {
+    currentResult = currentResult * enterNumber;
+    operator = "*";
+  } else {
+    currentResult = currentResult / enterNumber;
+    operator = "/";
+  }
+  createAndWriteOutput(operator, initlaResult, enterNumber);
+
+  writeToLog(operation, initlaResult, enterNumber, currentResult);
+}
+
+addBtn.addEventListener("click", calculate.bind(this, "ADD"));
+subtractBtn.addEventListener("click", calculate.bind(this, "SUBSTRACT"));
+multiplyBtn.addEventListener("click", calculate.bind(this, "MULTIPLY"));
+divideBtn.addEventListener("click", calculate.bind(this, "DIVIDE"));
