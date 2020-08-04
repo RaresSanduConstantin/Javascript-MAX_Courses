@@ -19,3 +19,4 @@ for (const listItemEl of listItemElement) {
 body.style.backgroundColor = "#f4f4f4";
 
 console.log(ul.childNodes);
+console.log(123);
