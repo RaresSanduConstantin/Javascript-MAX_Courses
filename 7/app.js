@@ -21,3 +21,4 @@ body.style.backgroundColor = "#f4f4f4";
 console.log(ul.childNodes);
 
 // document.documentElement.parentElement
+document.getElementsByTagName(body);
