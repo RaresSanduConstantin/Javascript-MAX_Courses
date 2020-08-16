@@ -9,24 +9,41 @@
       .title {
         color: red;
       }
+
+      .red-bg {
+        background-color: red;
+        color: #fff;
+      }
+
+      .visible {
+        display: block;
+      }
+
+      .invisible {
+        display: none;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1 id="main-title">The Document Object Model (DOM)!</h1>
     </header>
-    <ul>
-      <li class="list-item">Item 1</li>
-      <li class="list-item">Item 2</li>
-      <li class="list-item">Item 3</li>
-    </ul>
+    <section class="red-bg">
+      <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+        <li class="list-item">Item 4</li>
+      </ul>
+    </section>
+    <button>Toggle Visibility</button>
     <input id="input-text" type="text" placeholder="default text" />
-    <input
+    <!-- <input
       id="input-submit"
       type="submit"
       value="Display your text"
       onclick="subtmiText()"
-    />
+    /> -->
     <script src="app.js"></script>
   </body>
 </html>
