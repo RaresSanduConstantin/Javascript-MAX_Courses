@@ -66,9 +66,14 @@ const list = document.querySelector("ul");
 // newLi.textContent = "Item 7";
 // list.appendChild(newLi);
 
+// Cum sa adaugi sau sa modifici noduri
 const listItems = document.querySelectorAll("li");
 const listItems2 = document.getElementsByTagName("li");
 const newLi = document.createElement("li");
 newLi.textContent = "Item Rares";
 list.append(newLi);
 listItems[0].textContent = "Item 11";
+
+// Metode de remove
+// list.remove();
+// list.parentElement.removeChild(list);
