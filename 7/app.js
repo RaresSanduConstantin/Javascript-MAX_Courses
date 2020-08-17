@@ -58,3 +58,17 @@ button.addEventListener("click", () => {
   // section.classList.toggle("visible");
   section.classList.toggle("invisible");
 });
+
+const list = document.querySelector("ul");
+// list.innerHTML = list.innerHTML + "<li>Item 5</li>";
+
+// const newLi = document.createElement("li");
+// newLi.textContent = "Item 7";
+// list.appendChild(newLi);
+
+const listItems = document.querySelectorAll("li");
+const listItems2 = document.getElementsByTagName("li");
+const newLi = document.createElement("li");
+newLi.textContent = "Item Rares";
+list.append(newLi);
+listItems[0].textContent = "Item 11";
