@@ -120,7 +120,7 @@ class ProductList {
     renderHook.append(prodList);
   }
 }
-
+console.log(123);
 console.log(123);
 
 const productList = new ProductList();
