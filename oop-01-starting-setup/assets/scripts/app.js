@@ -125,6 +125,3 @@ const productList = new ProductList();
 productList.render();
 
 
-
-console.log(321);
-console.log(321);
