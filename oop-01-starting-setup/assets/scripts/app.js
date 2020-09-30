@@ -124,4 +124,6 @@ class ProductList {
 const productList = new ProductList();
 productList.render();
 
-
+function a(n) {
+  console.log(n);
+}
